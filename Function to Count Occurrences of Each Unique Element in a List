@@ -1,0 +1,9 @@
+dict1={}
+list1=[1,2,2,3,3,3]
+def fun(list1,dict1):
+  for i  in list1:
+    if i not in dict1:
+      dict1[i]=list1.count(i)
+  return dict1
+
+print(fun(list1,dict1))
