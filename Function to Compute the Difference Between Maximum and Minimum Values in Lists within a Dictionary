@@ -1,0 +1,8 @@
+d={'a':[1,7,3],'b':[9,4,2]}
+r={}
+def fun(d,r):
+  for key,value in d.items():
+    r[key]=max(value)-min(value)
+
+  return r
+print(fun(d,r))
