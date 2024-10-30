@@ -1,0 +1,11 @@
+def sumi(arr, k,i):
+  if i+k> len(arr):
+    return 0
+  s=sum(arr[i:i+k])
+  maxi= sumi(arr,k,i+1)
+  return max(s,maxi)
+
+arr = [2, 1, 5, 1, 3, 2,1]
+k = 3
+i=0
+print(sumi(arr, k,i))
