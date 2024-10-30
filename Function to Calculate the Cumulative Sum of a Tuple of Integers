@@ -1,0 +1,12 @@
+list1=[]
+p=input("enter: ")
+x=tuple(map(int,p.split(',')))
+def sumi(x,list1):
+  sum1=0
+  for i in x:
+    sum1+=i
+    list1.append(sum1)
+  return tuple(list1)
+ 
+
+print(sumi(x,list1))
