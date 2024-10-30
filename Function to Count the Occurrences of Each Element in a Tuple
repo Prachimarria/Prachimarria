@@ -1,0 +1,11 @@
+def count1(tup1):
+    count_dict = {}
+    for i in tup1:
+        if i in count_dict:
+            count_dict[i] += 1
+        else:
+            count_dict[i] = 1
+    print(count_dict)
+
+tup1 = (1, 2, 2, 3, 4, 5, 3, 5)
+count1(tup1)
