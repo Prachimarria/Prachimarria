@@ -1,0 +1,9 @@
+dict1={'a':10,'b':20,'c':30}
+dict2={'b':25,'c':35,'d':40}
+for key,value in dict1.items():
+  if key in dict2:
+    dict2[key]+=value
+  else:
+    dict2[key]=value
+
+print(dict2)
