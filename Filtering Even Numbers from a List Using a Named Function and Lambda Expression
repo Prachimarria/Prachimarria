@@ -1,0 +1,9 @@
+def even(i):
+  if i%2==0:
+    return i
+  
+seq=[1,2,3,4,5,2,3]
+print(list(filter(even,seq)))
+
+even=list(filter(lambda i:i%2==0,seq))
+print(even)
