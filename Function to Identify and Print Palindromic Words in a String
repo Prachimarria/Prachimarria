@@ -1,0 +1,10 @@
+n="my name is sas faf"
+list=[]
+def find(n):
+  n=n.split()
+  for i in n:
+    if i==i[::-1]:
+      list.append(i)
+  print(list)
+      
+find(n)
