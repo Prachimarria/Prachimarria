@@ -1,0 +1,12 @@
+def tup1(n,i):
+  tup=[]
+  el=int(input("add ele: "))
+  if i==n:
+    return 
+  tup.append(el)
+  print(tup)
+  return tup1(n,i+1) 
+    
+i=1
+n=int(input("enter how many elents you want"))
+print(tup1(n,i))
