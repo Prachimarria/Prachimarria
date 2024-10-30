@@ -1,0 +1,5 @@
+p=input().split(" ")
+s=set(p)
+k=sorted(s)
+r=" ".join(k)
+print(r)
