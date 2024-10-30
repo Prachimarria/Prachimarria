@@ -1,0 +1,19 @@
+list=[4,6,4,3,3,4,4,3,8]
+dict={}
+result={}
+k=3
+def sumi(list,k):
+  sum2=0
+  for val in list:
+    if val in dict:
+      dict[val]+=1
+    else:
+      dict[val]=1
+  for val,count in dict.items():
+    if count==k:
+      sum2+=val*k
+      result[val]=sum2
+  print(result)
+
+
+sumi(list,k)
