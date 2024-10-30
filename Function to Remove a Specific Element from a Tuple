@@ -1,0 +1,8 @@
+def rem(tup,el):
+  a=list(tup)
+  a.remove(el)
+  y=tuple(a)
+  return y
+tup=(1,2,3,4,5,6,7)
+el=int(input("enter element you want to remove: "))
+print(rem(tup,el))
